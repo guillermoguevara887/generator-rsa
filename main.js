@@ -52,7 +52,15 @@ function calcularN(p, q) {
 }
 
 function calcularFi(p, q) {
-    return ((p - 1) * (q - 1))
+
+    let fiNumber = ((p - 1) * (q - 1))
+    if (fiNumber !== 0) {
+        return fiNumber;
+
+    }
+    else {
+        console.log("Error: El valor de 'fi' es cero. Asegúrate de que 'p' y 'q' sean primos válidos.");
+    }
 }
 
 console.log("Número primo al azar entre 100 y 999:");
@@ -61,6 +69,7 @@ function modInverse(a, m) {
     let m0 = m;
     let x0 = 0n;
     let x1 = 1n;
+
 
     if (m === 1n) {
         return 0n;

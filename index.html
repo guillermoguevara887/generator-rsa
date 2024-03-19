@@ -12,32 +12,51 @@
 <body>
 
     <form action="" id="form">
-        <button id="btn">Calcular</button>
-        <label for="p">Numero primo P</label>
-        <input type="text" id="p">
-        <label for="q">Numero primo Q</label>
-        <input type="text" id="q">
-        <label for="n">Numero n</label>
-        <input type="text" id="n">
-        <label for="fi">Numero Fi</label>
-        <input type="text" id="fi">
-        <label for="d">Numero d</label>
-        <input type="text" id="d">
+        <h1>Programa para cifrar RSA</h1>
+        <button id="btn" class="bbt">Calcular</button>
+        <p>Si no se genera el numero "d" por favor volver a presionar el boton "Generar"</p>
+        <span>
+            <label for="p">Numero P</label>
+            <input type="text" id="p">
+        </span>
+        <span>
+            <label for="q">Numero Q</label>
+            <input type="text" id="q">
+        </span>
+        <span>
+            <label for="n">Numero n</label>
+            <input type="text" id="n">
+        </span>
+        <span>
+            <label for="fi">Numero Fi</label>
+            <input type="text" id="fi">
+        </span>
+        <span>
+            <label for="d">Numero d</label>
+            <input type="text" id="d">
+        </span>
+
+
+
+
     </form>
     <div id="input">
+
         <h2>Palabra a cifrar</h2>
         <label for="palabra">Ingrese Frase a Cifrar</label>
         <input type="text" id="palabra">
-        <button id="btn-cifrar">Cifrar</button>
+        <button id="btn-cifrar" class="bbt">Cifrar</button>
         <label for="palabra-cifrar">Frase Cifrada</label>
-        <input type="text" id="palabra-cifrar">
+        <input type="text" id="palabra-cifrar" class="word-cifrar">
 
 
     </div>
     <div id="output">
         <h2>Palabra a descifrar</h2>
-        <input type="text" id="word">
-        <button id="btn-descifrar">Descifrar</button>
+        <label for="word">Ingrese Frase a Descifrar</label>
+        <input type="text" id="word" class="word-cifrar">
+        <button id="btn-descifrar" class="bbt">Descifrar</button>
+        <label for="palabra-descifrar">Frase Descifrada</label>
         <input type="text" id="palabra-descifrar">
 
 
